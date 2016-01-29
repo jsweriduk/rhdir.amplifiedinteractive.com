@@ -1,0 +1,35 @@
+# Turn Rewrite Engine On
+RewriteEngine on
+
+# NC makes the rul non case sensitive
+# L makes this the last rule that this specific condition will match
+
+# Rewrite for article-content-detail.php?id=xxx
+RewriteRule ^article/([0-9a-zA-Z_-]+) article-content-detail.php?id=$1 [NC,L]
+
+# Rewrite for article-content-detail.php?id=xxx
+RewriteRule ^blog/([0-9a-zA-Z_-]+) article-content-detail.php?id=$1 [NC,L]
+
+# Rewrite for treatment-tube-detail.php?id=xxx
+RewriteRule ^video/([0-9a-zA-Z_-]+) treatment-tube-detail.php?id=$1 [NC,L]
+
+
+## TOP LEVEL
+RewriteRule ^videos/home treatment-tube.php [NC,L]
+#RewriteRule ^news/home # [NC,L]
+#RewriteRule ^opinions/home # [NC,L]
+RewriteRule ^education/home treatment-education.php [NC,L]
+
+
+## TREATMENT TUBE SUB LEVEL
+RewriteRule ^videos/recommended/	treatment-tube.php [NC,L]
+RewriteRule ^videos/recent/			treatment-tube-recent.php [NC,L]
+RewriteRule ^videos/drug-addiction/	treatment-tube-drug-addiction.php [NC,L]
+RewriteRule ^videos/mental-health/	treatment-tube-mental-health.php [NC,L]
+
+## NEWS SUB LEVEL
+RewriteRule ^news/entertainment/	treatment-news-entertainment.php [NC,L]
+RewriteRule ^news/health-care/		treatment-news-health-care.php [NC,L]
+RewriteRule ^news/recent/			treatment-news-recent.php [NC,L]
+RewriteRule ^news/political/		treatment-news-political.php [NC,L]
+RewriteRule ^news/local/			treatment-news-local.php [NC,L]
