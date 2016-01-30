@@ -6,10 +6,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>News | Recent</title>
+    <title>News | Recently Added</title>
 
     <!-- Head -->
-    <?php include 'include/head.php';  ?>
+    <?php include '/include/head.php';  ?>
 
     <link rel="stylesheet" href="/style.css" type="text/css" />
 
@@ -18,10 +18,10 @@
 <body class="">
 
     <!-- Header -->
-    <?php include 'include/mashableNav.php';  ?>
+    <?php include '/include/mashableNav.php';  ?>
        
 <section>
-	<?php include 'include/tube-search.php'; ?>
+	<?php include '/include/tube-search.php'; ?>
     <div class="container">
         <div class="row">
 
@@ -50,7 +50,7 @@
                 <div class="container clearfix"-->
 
                     <div class="strike">
-                        <h1 name="tube-recommended">News | Recent</h1>
+                        <h1 name="tube-recommended">News | Recently Added</h1>
                     </div>
 
                     <div id="tube-recommended" class="">
@@ -178,7 +178,7 @@
 					</script>
             </div>
 
-                <?php include 'include/rightside.php';  ?>
+                <?php include '/include/rightside.php';  ?>
 
             
         </div>
@@ -189,17 +189,17 @@
 
     <!-- Call Banner -->
     <br/>        
-    <?php include 'include/callBanner.php';  ?>
+    <?php include '/include/callBanner.php';  ?>
     <br/>
 
     <!-- Section Bottom -->
-    <?php include 'include/bottom.php';  ?>
+    <?php include '/include/bottom.php';  ?>
 
     <!-- Footer -->
-    <?php include 'include/footer.php';  ?>    
+    <?php include '/include/footer.php';  ?>    
         
     <!-- Script Footer -->
-    <?php include 'include/footerScript.php';  ?>    
+    <?php include '/include/footerScript.php';  ?>    
 
 </body>
 </html>

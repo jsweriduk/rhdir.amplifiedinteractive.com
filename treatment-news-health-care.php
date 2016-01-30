@@ -11,7 +11,7 @@
     <!-- Head -->
     <?php include 'include/head.php';  ?>
 
-    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
 
 </head><!--/head-->
 
@@ -74,7 +74,7 @@
                                     $image1="thumb-test-1.png";
                                 }*/
                                $image1 =  substr($row['imageFN1'],0,-4) . "-thumb.png";
-                               $imageurl = "/images/content/";
+                               $imageurl = "images/content/";
 								if(($itemcount % 12) == 0) {
 									if($itemcount == 0) {
 											echo "<div class='pagination-div active' id='pagination-" . $paginationcount++ . "'>";
@@ -88,10 +88,10 @@
                                <div class="video col-lg-4 col-md-6 col-sm-12">
                                     <div class="ipost clearfix card-content">
                                         <div class="entry-image">
-                                            <?php echo "<a href='/article/". $row['contentURL'] . "'><img class='img-responsive' src='". $imageurl . $image1 . "'></a>  </div>"; ?>
+                                            <?php echo "<a href='article-content-detail.php?id=". $row['con_id'] . "'><img class='img-responsive' src='". $imageurl . $image1 . "'></a>  </div>"; ?>
                                         <div class="entry-title">
                           
-                                        <?php echo   "<h3><a href='/article/". $row['contentURL'] . "'> " . $shortTitle . "</a></h3>"; ?>
+                                        <?php echo   "<h3><a href='article-content-detail.php?id=". $row['con_id'] . "'> " . $shortTitle . "</a></h3>"; ?>
                                                                 
                                         </div>
                                         <ul class="entry-meta clearfix">
@@ -107,7 +107,7 @@
                                             <li><a href="#"><i class="icon-film"></i></a></li-->
                                         </ul>
                                         <div class="entry-content">
-                                            <?php echo   "<a href='/article/". $row['contentURL'] . "'> " . $shortContent . "</a>"; ?>
+                                            <?php echo   "<a href='article-content-detail.php?id=". $row['con_id'] . "'> " . $shortContent . "</a>"; ?>
                                         </div>
                                     </div>
                                 </div>

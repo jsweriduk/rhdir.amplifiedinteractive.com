@@ -11,7 +11,7 @@
     <!-- Head -->
     <?php include 'include/head.php';  ?>
 
-    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
 
 </head><!--/head-->
 

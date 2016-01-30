@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Education | Mental Health Disorders</title>
+    <title>Blog | Popular</title>
 
     <!-- Head -->
     <?php include '/include/head.php';  ?>
@@ -34,7 +34,7 @@
 
                     
                 <?php
-    $result=mysql_query("SELECT * FROM attContent WHERE mainCat='Education' and subCat='Mental Health Disorders'	and content != '' order by createDate desc");
+    $result=mysql_query("SELECT * FROM attContent WHERE mainCat='Blog' and subCat='Popular'	and content != '' order by createDate desc");
 
     $contentArray = array();
     while ($contents=mysql_fetch_assoc($result)) {
@@ -50,7 +50,7 @@
                 <div class="container clearfix"-->
 
                     <div class="strike">
-                        <h1 name="tube-recommended">Education | Mental Health Disorders</h1>
+                        <h1 name="tube-recommended">Blog | Popular</h1>
                     </div>
 
                     <div id="tube-recommended" class="">
@@ -91,7 +91,7 @@
                                             <?php echo "<a href='/article/". $row['contentURL'] . "'><img class='img-responsive' src='". $imageurl . $image1 . "'></a>  </div>"; ?>
                                         <div class="entry-title">
                           
-                                        <?php echo   "<h3><a href='/article/". $row['contentURL'] . "'>" . $shortTitle . "</a></h3>"; ?>
+                                        <?php echo   "<h3><a href='/article/". $row['contentURL'] . "'> " . $shortTitle . "</a></h3>"; ?>
                                                                 
                                         </div>
                                         <ul class="entry-meta clearfix">
